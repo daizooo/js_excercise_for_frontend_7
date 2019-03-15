@@ -15,8 +15,8 @@
   //       - 「◯件目のクイズデータ」をli要素として追加する
   //       - buildQuizList関数の戻り値(ul要素のDOM)をli要素に追加する。(結果としてネスト(入れ子)構造のリストになる)
   fetch(API_URL)
-    .then(Response => {
-      return Response.json();
+    .then(response => {
+      return response.json();
     })
     .then(data => {
       const listContainer = document.getElementById('quiz-list');
